@@ -1,0 +1,15 @@
+<body style="background:#0f172a">
+
+<div style="width:350px;margin:auto;margin-top:150px;background:white;padding:30px;border-radius:10px">
+
+<h2>Login</h2>
+
+<form method="POST" action="/send-otp/">
+{% csrf_token %}
+<input name="email" placeholder="Email" class="form-control mb-2">
+<input name="password" type="password" placeholder="Password" class="form-control mb-2">
+<button class="btn btn-dark w-100">Send OTP</button>
+</form>
+
+</div>
+</body>
