@@ -1,0 +1,11 @@
+<div style="width:350px;margin:auto;margin-top:150px;background:white;padding:30px;border-radius:10px">
+
+<h3>Enter OTP</h3>
+
+<form method="POST" action="/verify-otp/">
+{% csrf_token %}
+<input name="otp" placeholder="OTP" class="form-control mb-2">
+<button class="btn btn-success w-100">Verify</button>
+</form>
+
+</div>
